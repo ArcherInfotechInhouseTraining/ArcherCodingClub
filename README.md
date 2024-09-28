@@ -18,3 +18,39 @@ The aim of this repository is to provide a centralized location for solutions to
 
 The repository is organized by platform, and each platform folder contains solutions categorized by problem difficulty and type.
 
+
+
+# Git Steps For Push Code And Open Pull Resquest
+
+- Step 1
+	git clone https://github.com/ArcherInfotechInhouseTraining/ArcherCodingClub.git
+
+- step 2 
+	cd ArcherCodingClub.
+
+- step 3
+	git branch <branch_name>  // git branch pooja
+
+- step 3
+	git checkout <branch_name> // sswitch branch.
+
+- step 4
+	git add .  	//add all Files
+
+- step 5 
+	git commit -m "Initial Commit"
+
+- step 6 
+	git push origin <branch_name>
+
+- step 7  
+	open pull request .... and write msg what you did in that.(in branch )
+
+- step 8 
+	squash and merge.
+
+- step 9
+	confirm.
+
+
+
