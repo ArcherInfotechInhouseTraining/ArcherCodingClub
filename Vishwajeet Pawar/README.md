@@ -2,13 +2,7 @@
 
 Welcome to **ArcherCodingClub**! This repository is a one-stop solution for various coding challenges and problem sets from multiple platforms, including:
 
-- LeetCode
-- HackerRank
-- Codeforces
-- CodeChef
-- GeeksforGeeks
-- AtCoder
-- And more...
+## HackerRank
 
 ## Purpose
 
