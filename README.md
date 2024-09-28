@@ -1,6 +1,6 @@
-# CodingPlatformSolutionsHub
+# Archer Coding Club
 
-Welcome to **CodingPlatformSolutionsHub**! This repository is a one-stop solution for various coding challenges and problem sets from multiple platforms, including:
+Welcome to **ArcherCodingClub**! This repository is a one-stop solution for various coding challenges and problem sets from multiple platforms, including:
 
 - LeetCode
 - HackerRank
