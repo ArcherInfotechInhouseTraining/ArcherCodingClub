@@ -1,8 +1,24 @@
 # Archer Coding Club
 
+# Code Description
+
+# Hint to solve code
+
+## DAY 4 28/9/24
+  -In this Problrem to find th outpute one simple trick 
+  - one formula is inf for find output:
+  - S=n*(n+1)/2;
+
+
 Welcome to **ArcherCodingClub**! This repository is a one-stop solution for various coding challenges and problem sets from multiple platforms, including:
 
-## HackerRank
+- LeetCode
+- HackerRank
+- Codeforces
+- CodeChef
+- GeeksforGeeks
+- AtCoder
+- And more...
 
 ## Purpose
 
@@ -11,37 +27,5 @@ The aim of this repository is to provide a centralized location for solutions to
 ## Structure
 
 The repository is organized by platform, and each platform folder contains solutions categorized by problem difficulty and type.
-
-# Steps of push code in with your branch
-
-- step 1 :
-    - git clone https://github.com/ArcherInfotechInhouseTraining/ArcherCodingClub.git
-
-- step 2 :
-    - update code
-
-- step 3 :
-    - git add .
-
-- step 4:
-	- git commit -m "message"
-
-- step 5 :
-	- create branch with your name
-
-- step 6 :
-	- git checkout brach_name 
-
-- step 7 :
-	- git push origin branch_name
-
-- step 8 :
-       - create pull request
-
-- step 9 :
-       - squash and merge
-       - confirm merge
-
-
 
 
