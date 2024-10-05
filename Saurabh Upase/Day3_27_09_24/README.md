@@ -1,4 +1,7 @@
 
+
+
+
 # Code Description
 
 # Hint to solve code
@@ -6,6 +9,7 @@
 ## DAY 3 27/9/24
   - In this problem You need to find and return the maximum sum possible from all the subarrays.
   - I am here used 2 loops(outter,inner) calculate sum and find max ;
+
 
 # Archer Coding Club
 
@@ -26,5 +30,6 @@ The aim of this repository is to provide a centralized location for solutions to
 ## Structure
 
 The repository is organized by platform, and each platform folder contains solutions categorized by problem difficulty and type.
+
 
 

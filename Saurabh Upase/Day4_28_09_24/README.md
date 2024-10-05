@@ -1,5 +1,6 @@
 # Archer Coding Club
 
+
 # Code Description
 
 # Hint to solve code
@@ -7,6 +8,8 @@
 ## DAY 4 28/9/24
   -In this Problrem to find th outpute one simple trick 
   - one formula is inf for find output:
+
+  - S=n*(n+1)/2;
   - S=n*(n+1)/2;
 
 
@@ -27,5 +30,6 @@ The aim of this repository is to provide a centralized location for solutions to
 ## Structure
 
 The repository is organized by platform, and each platform folder contains solutions categorized by problem difficulty and type.
+
 
 
