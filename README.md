@@ -43,7 +43,6 @@ The repository is organized by platform, and each platform folder contains solut
 
 - step 9
 	confirm.
-  
 ## Steps
 
 # git steps to open pull request and merge code
