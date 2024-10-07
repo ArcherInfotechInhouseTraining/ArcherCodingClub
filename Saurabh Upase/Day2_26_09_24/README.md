@@ -2,6 +2,8 @@
 
 
 
+
+
 # Code Description
 
 # Hint to solve code
@@ -11,6 +13,7 @@
  - your task is rotate the array from d index;
  - but you need to write another function ;
     
+
 
 
 
