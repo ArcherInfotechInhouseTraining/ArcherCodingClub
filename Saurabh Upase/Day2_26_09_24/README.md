@@ -1,9 +1,4 @@
 
-
-
-
-
-
 # Code Description
 
 # Hint to solve code
@@ -36,6 +31,4 @@ The aim of this repository is to provide a centralized location for solutions to
 ## Structure
 
 The repository is organized by platform, and each platform folder contains solutions categorized by problem difficulty and type.
-
-
 
