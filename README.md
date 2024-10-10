@@ -12,7 +12,6 @@ The aim of this repository is to provide a centralized location for solutions to
 
 The repository is organized by platform, and each platform folder contains solutions categorized by problem difficulty and type.
 
-
 # Git Steps For Push Code And Open Pull Resquest
 
 - Step 1
@@ -71,7 +70,6 @@ The repository is organized by platform, and each platform folder contains solut
 - step 9: squash and merge
 
 - step 10: confirm
-
 
 
 
