@@ -1,20 +1,31 @@
-# Archer Coding Club
+# CodingPlatformSolutionsHub
 
-Welcome to **ArcherCodingClub**! This repository is a one-stop solution for various coding challenges and problem sets from multiple platforms, including:
+This repository contains solutions to coding problems from various competitive programming platforms, organized by day and date. Each folder contains the solutions for the problems solved on that specific day or date.
 
-- LeetCode
-- HackerRank
-- Codeforces
-- CodeChef
-- GeeksforGeeks
-- AtCoder
-- And more...
+## Folder Structure
 
-## Purpose
+### Daywise & Datewise
 
-The aim of this repository is to provide a centralized location for solutions to problems across different competitive programming and coding platforms. Whether you're practicing for interviews or enhancing your problem-solving skills, you'll find helpful solutions and explanations here.
+- **Day 1/ (2024-09-28)**
+  - LeetCode/
+    - problem1_solution.cpp
+    - problem2_solution.py
+  - HackerRank/
+    - challenge1_solution.java
 
-## Structure
+- **Day 2/ (2024-09-29)**
+  - Codeforces/
+    - div2_problemA_solution.py
+  - CodeChef/
+    - problemB_solution.cpp
 
-The repository is organized by platform, and each platform folder contains solutions categorized by problem difficulty and type.
+- **Day 3/ (2024-09-30)**
+  - AtCoder/
+    - abc_problemC_solution.py
+  - GeeksforGeeks/
+    - array_problem_solution.cpp
+
+## Example:
+
+For **Day 1 (2024-09-28)**, the folder structure looks like this:
 
