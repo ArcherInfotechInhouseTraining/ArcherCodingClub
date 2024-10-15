@@ -10,6 +10,11 @@
   - one formula is inf for find output:
   - S=n*(n+1)/2;
 
+
+  -In this Problrem to find th outpute one simple trick 
+  - one formula is inf for find output:
+  - S=n*(n+1)/2;
+
   - In this Problrem to find th outpute one simple trick 
   - one formula is inf for find output:
 
