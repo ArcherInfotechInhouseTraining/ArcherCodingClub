@@ -1,0 +1,98 @@
+Minimum Jumps Array 
+
+Problem Description: Given an array of non-negative integers, A, of length N, you are 
+initially positioned at the first index of the array. 
+Each element in the array represents your maximum jump length at that position. 
+Return the minimum number of jumps required to reach the last index. 
+If it is not possible to reach the last index, return -1. 
+Problem Constraints: 1 <= N <= 106 0 <= A[i] <= 50000 
+Input Format: The first and the only argument contains an integer array, A. 
+Output Format: Return an integer, representing the answer as described in the problem 
+statement. 
+Example Input 
+Input 1: Input 2: 
+A = [2, 1, 1] A = [2, 3, 1, 1, 4] 
+Example Output: 
+Output 1: Output 1: 
+1 2 
+Example Explanation 
+Explanation 1: The shortest way to reach index 2 is, Index 0 -> Index 2 
+that requires only 1 jump. 
+Explanation 2: The shortest way to reach index 4 is, Index 0 -> Index 1 -> Index 4 
+that requires 2 jumps. 
+/** 
+ * @input A : Integer array 
+ * @input n1 : Integer array's ( A ) length 
+ * 
+ * @Output Integer 
+ */ 
+int jump(int* A, int n1) { 
+}
+
+ans:-
+
+
+#include<stdio.h>
+#define SIZE 200
+
+int jumps(int a[],int n)
+{
+    int i,j,cnt=0,tmp;
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+
+            if(a[0]==1&&a[n-1]==1)
+            {
+                return -1;
+            }
+            else if(a[i]!=1&&a[n-1]==1)
+            {
+                cnt++;
+                break;
+            }
+            else if(a[i]&&a[j]!=1)
+            {
+                cnt++;
+                break;
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+    return cnt;
+}
+int main()
+{
+    int a[SIZE],i,cnt,jumpcnt;
+
+    printf("\n enter your count : ");
+    scanf("%d",&cnt);
+
+    printf("\n Enter %d Array Element: ",cnt);
+    for(i=0;i<cnt;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+    printf("\n Array Element: ");
+    for(i=0;i<cnt;i++)
+    {
+        printf("\t %d",a[i]);
+    }
+
+    jumpcnt=jumps(a,cnt);
+
+    if(jumpcnt>0)
+    {
+        printf("\n %d jumps are required",jumpcnt);
+    }
+    else
+    {
+        printf("\n we can not jumps last index: ");
+    }
+
+}
