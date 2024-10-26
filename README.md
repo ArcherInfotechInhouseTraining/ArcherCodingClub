@@ -2,13 +2,7 @@
 
 Welcome to **ArcherCodingClub**! This repository is a one-stop solution for various coding challenges and problem sets from multiple platforms, including:
 
-- LeetCode
-- HackerRank
-- Codeforces
-- CodeChef
-- GeeksforGeeks
-- AtCoder
-- And more...
+# Interviewbit
 
 ## Purpose
 
@@ -53,4 +47,30 @@ The repository is organized by platform, and each platform folder contains solut
 	confirm.
 
 
+## Steps
 
+# git steps to open pull request and merge code
+
+- step 1: git clone https://github.com/ArcherInfotechInhouseTraining/ArcherCodingClub.git ( https link)
+
+- step 2: change the directory 
+		cd ArcherCodingClub
+
+- step 3:  create your branch
+	 	git branch <branch_name> //pallavi
+
+- step 4:  Enter into your branch
+	   	git checkout <branch_name> //pallavi 
+
+- step 5: git add .  //add all files
+
+- step 6:  git commit -m "your msg"
+
+- step 7: git push origin <branch_name> //pallavi
+
+- step 8: open pull request (in your  github branch)
+	 
+
+- step 9: squash and merge
+
+- step 10: confirm

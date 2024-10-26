@@ -1,0 +1,96 @@
+
+
+		*** INVERSIONS ***
+
+Problem Description: 
+
+Given an array A, count the number of inversions in the array.
+Formally speaking, two elements A[i] and A[j] form an inversion if A[i] > A[j] and i < j
+
+
+Example Input
+A : [2, 4, 1, 3, 5]
+
+
+Example Output
+3
+
+
+Example Explanation
+A : [2, 4, 1, 3, 5]
+Output : 3
+as the 3 inversions are (2, 1), (4, 1), (4, 3).
+
+
+
+//======================  Solution  ==============================
+
+import java.util.ArrayList;
+
+public class Solution {
+
+    public int countInversions(ArrayList<Integer> A) {
+        // Create a copy of the array
+        int[] arr = new int[A.size()];
+        for (int i = 0; i < A.size(); i++) {
+            arr[i] = A.get(i);
+        }
+        // Create a temporary array for merge sort
+        int[] temp = new int[arr.length];
+        
+        // Call the merge sort function and return the inversion count
+        return mergeSortAndCount(arr, temp, 0, arr.length - 1);
+    }
+
+    private int mergeSortAndCount(int[] arr, int[] temp, int left, int right) {
+        int mid, invCount = 0;
+        if (left < right) {
+            mid = (left + right) / 2;
+
+            // Count inversions in the left half
+            invCount += mergeSortAndCount(arr, temp, left, mid);
+
+            // Count inversions in the right half
+            invCount += mergeSortAndCount(arr, temp, mid + 1, right);
+
+            // Count split inversions (during the merge step)
+            invCount += mergeAndCount(arr, temp, left, mid, right);
+        }
+        return invCount;
+    }
+
+    private int mergeAndCount(int[] arr, int[] temp, int left, int mid, int right) {
+        int i = left;    // Starting index of left subarray
+        int j = mid + 1; // Starting index of right subarray
+        int k = left;    // Starting index to be sorted
+        int invCount = 0;
+
+        while (i <= mid && j <= right) {
+            if (arr[i] <= arr[j]) {
+                temp[k++] = arr[i++];
+            } else {
+                temp[k++] = arr[j++];
+                // If arr[i] > arr[j], then all elements from arr[i] to arr[mid]
+                // are greater than arr[j], so there are (mid - i + 1) inversions.
+                invCount += (mid - i + 1);
+            }
+        }
+
+        // Copy the remaining elements of left subarray, if any
+        while (i <= mid) {
+            temp[k++] = arr[i++];
+        }
+
+        // Copy the remaining elements of right subarray, if any
+        while (j <= right) {
+            temp[k++] = arr[j++];
+        }
+
+        // Copy the sorted subarray back to the original array
+        for (i = left; i <= right; i++) {
+            arr[i] = temp[i];
+        }
+
+        return invCount;
+    }
+}
