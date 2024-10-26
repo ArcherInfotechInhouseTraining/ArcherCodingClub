@@ -74,6 +74,3 @@ The repository is organized by platform, and each platform folder contains solut
 - step 9: squash and merge
 
 - step 10: confirm
-
-
-
