@@ -1,0 +1,97 @@
+
+
+		*** Convert the amount in number to words ***
+
+Problem Description: 
+Our company wants to create a data entry verification system. Given an amount in words and an amount indicated by data entry person in numbers, you have to detect whether the amounts are the same or not.
+
+Note:
+There are a lot of corner cases to be considered. The interviewer expects you to take care of them.
+Every word needs to be separated using "-" rather than a space character https://en.wikipedia.org/wiki/Indian_numbering_system
+"Use Expected Output option" to clear further doubts.
+
+
+Problem Constraints
+1 <= |A| <= 9
+1 <= |B| <= 100
+
+
+Input Format
+String num: Amount written in digits as a string. This string will be an integer number without having any commas in between the digits.
+String words: Amount written in words according to Indian Numbering System.
+
+
+Output Format
+An integer
+1: Values match
+0: Otherwise
+
+
+Example Input
+String num = "1234"
+String words = "one-thousand-two-hundred-and-thirty-four"
+
+
+Example Output
+1
+
+
+//======================  Solution  ==============================
+
+public class Solution {
+
+    // Maps numbers to words for the Indian numbering system
+    private static final String[] belowTwenty = {
+        "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", 
+        "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", 
+        "seventeen", "eighteen", "nineteen"
+    };
+
+    private static final String[] tens = {
+        "", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"
+    };
+
+    public int solve(String A, String B) {
+        // Convert the number string A to its word form
+        String wordRepresentation = numberToWords(A);
+
+        // Check if it matches the given string B
+        if (wordRepresentation.equals(B)) {
+            return 1; // Matching
+        } else {
+            return 0; // Not matching
+        }
+    }
+
+    // Function to convert number to its word form
+    private String numberToWords(String numStr) {
+        int num = Integer.parseInt(numStr);
+
+        if (num == 0) {
+            return "zero";
+        }
+
+        return convertToWords(num);
+    }
+
+    // Helper function to convert number to words using recursion
+    private String convertToWords(int num) {
+        if (num < 20) {
+            return belowTwenty[num];
+        } else if (num < 100) {
+            return tens[num / 10] + (num % 10 != 0 ? "-" + belowTwenty[num % 10] : "");
+        } else if (num < 1000) {
+            return belowTwenty[num / 100] + "-hundred" + (num % 100 != 0 ? "-and-" + convertToWords(num % 100) : "");
+        } else if (num < 100000) {
+            return convertToWords(num / 1000) + "-thousand" + (num % 1000 != 0 ? 
+            (num % 1000 < 100 ? "-and-" : "-") + convertToWords(num % 1000) : "");
+        } else if (num < 10000000) {
+            return convertToWords(num / 100000) + "-lakh" + (num % 100000 != 0 ? 
+            (num % 100000 < 100 ? "-and-" : "-") + convertToWords(num % 100000) : "");
+        } else {
+            return convertToWords(num / 10000000) + "-crore" + (num % 10000000 != 0 ? 
+            (num % 10000000 < 100 ? "-and-" : "-") + convertToWords(num % 10000000) : "");
+        }
+    }
+}
+

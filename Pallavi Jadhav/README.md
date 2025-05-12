@@ -25,7 +25,5 @@ This repository contains solutions to coding problems from various competitive p
   - GeeksforGeeks/
     - array_problem_solution.cpp
 
-## Example:
 
-For **Day 1 (2024-09-28)**, the folder structure looks like this:
 

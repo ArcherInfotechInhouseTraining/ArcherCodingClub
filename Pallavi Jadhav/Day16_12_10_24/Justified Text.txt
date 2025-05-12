@@ -1,0 +1,67 @@
+
+
+		*** Justified Text ***
+
+Problem Description
+ 
+ 
+
+Given an array of words and a length of L, format the text such that each line has exactly L characters and is fully (left and right) justified. You should pack your words in a greedy approach; that is, pack as many words as you can in each line.
+
+ 
+
+Pad extra spaces ' ' when necessary so that each line has exactly L characters. Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line does not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right. For the last line of text, it should be left justified and no extra space is inserted between words.
+
+Your program should return a list of strings, where each string represents a single line. 
+
+Note: Each word is guaranteed not to exceed L in length.
+
+
+
+Problem Constraints
+0 <= |A| <= 1000
+0 <= B <= 5 * 104
+
+
+Input Format
+The first argument is an array of strings A representing words.
+The second argument is an integer B representing L.
+
+
+Output Format
+Return a list of strings, where each string represents a single line.
+
+
+Example Input
+A: ["This", "is", "an", "example", "of", "text", "justification."]
+B: 16.
+
+
+Example Output
+[
+   "This    is    an",
+   "example  of text",
+   "justification.  "
+]
+
+
+Example Explanation
+Given words: ["This", "is", "an", "example", "of", "text", "justification."]
+L: 16.
+
+
+Return the formatted lines as:
+[
+   "This    is    an",
+   "example  of text",
+   "justification.  "
+]
+
+
+
+//======================  Solution  =================================
+not solved
+
+
+
+ 
