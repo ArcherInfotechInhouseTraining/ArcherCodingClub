@@ -12,3 +12,36 @@ The aim of this repository is to provide a centralized location for solutions to
 
 The repository is organized by platform, and each platform folder contains solutions categorized by problem difficulty and type.
 
+# Steps of push code in with your branch
+
+- step 1 :
+    - git clone https://github.com/ArcherInfotechInhouseTraining/ArcherCodingClub.git
+
+- step 2 :
+    - update code
+
+- step 3 :
+    - git add .
+
+- step 4:
+	- git commit -m "message"
+
+- step 5 :
+	- create branch with your name
+
+- step 6 :
+	- git checkout brach_name 
+
+- step 7 :
+	- git push origin branch_name
+
+- step 8 :
+       - create pull request
+
+- step 9 :
+       - squash and merge
+       - confirm merge
+
+
+
+

@@ -1,0 +1,58 @@
+Day :-3
+
+Given an integer array arr[]. You need to find and return the maximum sum possible from all the subarrays.
+
+Examples:
+
+Input: arr[] = [1, 2, 3, -2, 5]
+Output: 9
+Explanation: Max subarray sum is 9 of elements (1, 2, 3, -2, 5).
+Input: arr[] = [-1, -2, -3, -4]
+Output: -1
+Explanation: Max subarray sum is -1 of element (-1).
+Input: arr[] = [5, 4, 7]
+Output: 16
+Explanation: Max subarray sum is 16 of elements (5, 4, 7)
+Expected Time Complexity: O(n)
+Expected Auxiliary Space: O(1)
+
+Constraints:
+1 ≤ arr.size() ≤ 105
+-107 ≤ arr[i] ≤ 107
+
+
+output:- 
+
+  public:
+    // Function to find the sum of contiguous subarray with maximum sum.
+    int maxSubarraySum(vector<int> &arr) {
+        // code here...
+        int sum,max=arr[0];
+        int i,j;
+        
+        for(i=0;i<arr.size();i++)
+        {
+            sum=0;
+            j=i;
+            while(j<arr.size())
+            {
+                sum+=arr[j++];
+                if(max<sum)
+                {
+                    max=sum;
+                }
+                else if(max>0)
+                {
+                    continue;
+                }
+                else
+                {
+                    break;
+                }
+                
+            }
+            
+        }
+        return max;
+    }
+};

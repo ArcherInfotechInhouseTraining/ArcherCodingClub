@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class homedelivers {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char foodType=sc.next().charAt(0);
+        int quantOrdard=sc.nextInt();
+        int distance= sc.nextInt();
+        int total=0;
+        int totalbill= -1;
+
+        if(foodType=='N'){
+            total=quantOrdard*15;
+        } else if (foodType=='V') {
+            total=quantOrdard*12;
+        }
+
+        if(distance<=3){
+            totalbill=total;
+        }
+        else if(distance>3 && distance<=6){
+            totalbill=total+(distance-3);
+        }
+        else {
+            totalbill=total+((distance-6)*2)+3;
+        }
+        System.out.println(totalbill);
+
+    }
+}

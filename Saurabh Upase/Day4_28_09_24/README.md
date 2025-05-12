@@ -1,20 +1,11 @@
 # Archer Coding Club
 
-Welcome to **ArcherCodingClub**! This repository is a one-stop solution for various coding challenges and problem sets from multiple platforms, including:
+# Code Description
 
-- LeetCode
-- HackerRank
-- Codeforces
-- CodeChef
-- GeeksforGeeks
-- AtCoder
-- And more...
+# Hint to solve code
 
-## Purpose
+## DAY 4 28/9/24
 
-The aim of this repository is to provide a centralized location for solutions to problems across different competitive programming and coding platforms. Whether you're practicing for interviews or enhancing your problem-solving skills, you'll find helpful solutions and explanations here.
-
-## Structure
-
-The repository is organized by platform, and each platform folder contains solutions categorized by problem difficulty and type.
-
+  -In this Problrem to find th outpute one simple trick 
+  - one formula is inf for find output:
+  - S=n*(n+1)/2;
